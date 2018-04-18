@@ -1,0 +1,75 @@
+@import "../../node_modules/tracim_lib/src/css/Variable.styl"
+
+backgroundrules()
+  margin-bottom 50px
+  border-radius 10px
+  background-color off-white
+
+title()
+  margin-bottom 35px
+  font-size 20px
+  font-weight 400
+
+.appdashboard
+  width 760px
+  &__content
+    padding 10px
+    width 100%
+    overflow-y auto
+    &__description
+      backgroundrules()
+      padding 10px
+      &__text
+        & > textarea
+          width 100%
+          min-height 150px
+    &__userlist
+      backgroundrules()
+      &__title
+        title()
+        padding 10px 0 0 10px
+      &__list
+        margin 0
+        padding 0
+        height 400px
+        overflow-y auto
+        list-style none
+        &__item
+          display flex
+          align-items center
+          border-top 1px solid grey
+          padding 10px
+          &__role
+            .btndropdown
+              display flex
+              align-items center
+              border none
+              background-color transparent
+      &__adduser
+        border-top 1px solid grey
+        padding 20px
+        &__button
+          display flex
+          align-items center
+          &__avatar
+            display flex
+            justify-content center
+            align-items center
+            margin-right 20px
+            border 2px dashed grey
+            border-radius 50%
+            width 50px
+            height 50px
+            cursor pointer
+            &__icon
+              color grey
+              font-size 25px
+          &__text
+            font-size 18px
+            color blue
+            cursor pointer
+    &__functionality
+      backgroundrules()
+      padding 10px
+      &__title
+        title()
