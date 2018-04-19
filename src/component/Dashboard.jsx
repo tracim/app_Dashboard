@@ -399,15 +399,15 @@ const Dashboard = props => {
         </div>
         <ul className='appdashboard__content__functionality__list'>
           <li className='appdashboard__content__functionality__list__item'>
-            <div className='item__text mr-auto'>
-              Calendrier de l'espace de travail
+            <div className='item__text'>
+              Calendrier de l'espace de travail :
             </div>
             <div className='item__btnswitch'>
               <BtnSwitch />
             </div>
           </li>
           <li className='appdashboard__content__functionality__list__item'>
-            <div className='item__text mr-auto'>
+            <div className='item__text'>
               Visioconférence :
             </div>
             <div className='item__btnswitch'>

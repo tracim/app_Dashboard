@@ -35,6 +35,7 @@ coloricon()
       backgroundrules()
       padding 10px
       &__text
+        margin-bottom 15px
         & > textarea
           width 100%
           min-height 150px
@@ -175,10 +176,44 @@ coloricon()
         &__item
           display flex
           align-items center
+          justify-content space-between
           margin-bottom 20px
           width 500px
           &__text
             font-size 18px
 
+/**** MEDIA QUERIES ****/
 
+@media (min-width: min-sm) and (max-width: max-sm)
+
+  .appdashboard
+    width 100%
+
+@media (max-width: max-xs)
+
+  .appdashboard
+    width 100%
+    &__content
+      padding 10px 0
+      &__userlist
+        &__list
+          &__item
+            flex-wrap wrap
+            &__role
+              margin-left 7px
+              .btndropdown
+                &:focus
+                  outline none
+            &__delete
+              display none
+        &__form
+          &__role
+            margin-bottom 0
+            &__list
+              display block
+      &__functionality__list
+        &__item
+          display block
+          .item__text
+            margin-bottom 15px
 
