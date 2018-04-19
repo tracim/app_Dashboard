@@ -9,6 +9,17 @@ import {
 import i18n from '../i18n.js'
 
 class Dashboard extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      displayFormNewMember: false,
+    }
+  }
+
+  handleToggleFormNewMember = () => this.setState(prevState => ({
+    displayFormNewMember: !prevState.displayFormNewMember
+  }))
+
   render () {
     return (
       <PopinFixed customClass='appdashboard'>
@@ -23,7 +34,10 @@ class Dashboard extends React.Component {
 
         <PopinFixedContent customClass='appdashboard'>
 
-          <DashboardComponent />
+          <DashboardComponent
+            displayFormNewMember={this.state.displayFormNewMember}
+            onClickToggleForm={this.handleToggleFormNewMember}
+          />
 
         </PopinFixedContent>
       </PopinFixed>
