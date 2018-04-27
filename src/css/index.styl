@@ -140,9 +140,6 @@ coloricon()
             margin 15px 0
             label()
           &__list
-            display flex
-            align-items center
-            flex-wrap wrap
             margin 0
             padding 0
             list-style none
@@ -161,11 +158,12 @@ coloricon()
             cursor pointer
     &__functionality
       backgroundrules()
-      padding 10px
       &__title
         title()
+        padding 10px
       &__text
         margin-bottom 20px
+        padding-left 10px
       &__list
         margin 0
         padding 0
@@ -175,7 +173,11 @@ coloricon()
           align-items center
           justify-content space-between
           margin-bottom 20px
-          width 500px
+          padding 5px 10px
+          width 100%
+          &:hover
+            color off-white
+            background-color blue
           &__text
             font-size 18px
 
